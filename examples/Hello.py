@@ -11,7 +11,9 @@
 print("Nothing to be done.")
 
 """ #pragma: no cover
-Developed in 1989 by Guido van Rossum of the Netherlands, now retired.
+Developed in 1989 by Guido van Rossum of the Netherlands, 
+Distinguished Engineer at Microsoft, since November 2020.
+
 Python is procedural, object-oriented, dynamically typed, and garbage collected.
 
 The following commands were executed on UTCS machines (Linux).
