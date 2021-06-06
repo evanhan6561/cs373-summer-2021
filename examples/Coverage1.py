@@ -29,7 +29,7 @@ if __name__ == "__main__" :
 
 """ #pragma: no cover
 $ coverage help
-Coverage.py, version 5.1 with C extension
+Coverage.py, version 4.5.2 with C extension
 Measure, collect, and report on code coverage in Python programs.
 
 usage: coverage <command> [options] [args]
@@ -40,13 +40,12 @@ Commands:
     erase       Erase previously collected coverage data.
     help        Get help on using coverage.py.
     html        Create an HTML report.
-    json        Create a JSON report of coverage results.
     report      Report coverage stats on modules.
     run         Run a Python program and measure code execution.
     xml         Create an XML report of coverage results.
 
 Use "coverage help <command>" for detailed help on any command.
-Full documentation is at https://coverage.readthedocs.io
+For full documentation, see https://coverage.readthedocs.io
 
 
 
@@ -63,7 +62,6 @@ Options:
   --concurrency=LIB     Properly measure code using a concurrency library.
                         Valid values are: thread, gevent, greenlet, eventlet,
                         multiprocessing.
-  --context=LABEL       The context label to record for this coverage run.
   --include=PAT1,PAT2,...
                         Include only files whose paths match one of these
                         patterns. Accepts shell-style wildcards, which must be
@@ -80,16 +78,12 @@ Options:
   --source=SRC1,SRC2,...
                         A list of packages or directories of code to be
                         measured.
-  --timid               Use a simpler but slower trace method. Try this if you
-                        get seemingly impossible results!
-  --debug=OPTS          Debug options, separated by commas. [env:
-                        COVERAGE_DEBUG]
+  --timid               Use a simpler but slower trace method.  Try this if
+                        you get seemingly impossible results!
+  --debug=OPTS          Debug options, separated by commas
   -h, --help            Get help on this command.
-  --rcfile=RCFILE       Specify configuration file. By default '.coveragerc',
-                        'setup.cfg', 'tox.ini', and 'pyproject.toml' are
-                        tried. [env: COVERAGE_RCFILE]
-
-Full documentation is at https://coverage.readthedocs.io
+  --rcfile=RCFILE       Specify configuration file.  By default '.coveragerc',
+                        'setup.cfg' and 'tox.ini' are tried.
 
 
 
@@ -99,10 +93,6 @@ Usage: coverage report [options] [modules]
 Report coverage statistics on modules.
 
 Options:
-  --contexts=REGEX1,REGEX2,...
-                        Only display data from lines covered in the given
-                        contexts. Accepts Python regexes, which must be
-                        quoted.
   --fail-under=MIN      Exit with a status of 2 if the total coverage is less
                         than MIN.
   -i, --ignore-errors   Ignore errors while reading source files.
@@ -115,15 +105,10 @@ Options:
   -m, --show-missing    Show line numbers of statements in each module that
                         weren't executed.
   --skip-covered        Skip files with 100% coverage.
-  --skip-empty          Skip files with no code.
-  --debug=OPTS          Debug options, separated by commas. [env:
-                        COVERAGE_DEBUG]
+  --debug=OPTS          Debug options, separated by commas
   -h, --help            Get help on this command.
-  --rcfile=RCFILE       Specify configuration file. By default '.coveragerc',
-                        'setup.cfg', 'tox.ini', and 'pyproject.toml' are
-                        tried. [env: COVERAGE_RCFILE]
-
-Full documentation is at https://coverage.readthedocs.io
+  --rcfile=RCFILE       Specify configuration file.  By default '.coveragerc',
+                        'setup.cfg' and 'tox.ini' are tried.
 
 
 
