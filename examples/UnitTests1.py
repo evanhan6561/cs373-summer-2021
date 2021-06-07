@@ -35,7 +35,7 @@ if __name__ == "__main__" :
     main()
 
 """ #pragma: no cover
-$ python UnitTests1.py
+$ python3 UnitTests1.py
 
 FFF
 ======================================================================
